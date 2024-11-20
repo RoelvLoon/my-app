@@ -9,7 +9,7 @@ export class RegistraionForm extends React.Component<{},{}> {
 
     render():JSX.Element {
         return(
-            <div className="d-flex justify-content-center align-items-center w-100 h-100 flex-column">
+            <div className="d-flex justify-content-center align-items-center p-2 m-5 h-100 flex-column bg-light rounded">
                 <div>
                     Welcome to our Registration Page
                 </div>
