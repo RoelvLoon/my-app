@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { RegistraionForm } from './Registration/Registration';
+import { RegistrationForm } from './Registration/Registration';
  
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 root.render(
 <React.StrictMode>
-<RegistraionForm />
+<RegistrationForm />
 </React.StrictMode>
 );
