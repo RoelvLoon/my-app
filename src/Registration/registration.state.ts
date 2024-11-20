@@ -1,7 +1,7 @@
 export type RegistrationState = {
     name:string,
     lastname:string,
-    age:number
+    age:number,
     updateName:(name:string) => (state:RegistrationState) => RegistrationState
 }
 

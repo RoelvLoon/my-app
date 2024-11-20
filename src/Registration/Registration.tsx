@@ -15,11 +15,11 @@ export class RegistraionForm extends React.Component<{},RegistrationState> {
                     Welcome to our Registration Page
                 </div>
                 <div>
-                    Name:
-                    <input
-                        value={"Some value"}
-                        onChange={(e) => this.setState({ name: e.currentTarget.value })}
-                    />
+                    <label className="d-flex justify-content-cetner">Name:</label>
+                    <input className="form-control"
+                        value = {this.state.name}
+                        onChange={e=>this.setState(this.state.updateName(e.currentTarget.value))}>
+                    </input>
                 </div>
             </div>
         )
