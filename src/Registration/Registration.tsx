@@ -1,10 +1,11 @@
 import React from "react";
-
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { initRegistrationState, RegistrationState } from "./registration.state";
 
-export class RegistraionForm extends React.Component<{},{}> {
+export class RegistraionForm extends React.Component<{},RegistrationState> {
     constructor(props:{}){
         super(props);
+        this.state = initRegistrationState
     }
 
     render():JSX.Element {
@@ -16,9 +17,9 @@ export class RegistraionForm extends React.Component<{},{}> {
                 <div>
                     Name:
                     <input
-                        value = {"Some value"}>
-                        {/* onChange=(this.state.name = e.currentTarget.value) */}
-                    </input>
+                        value={"Some value"}
+                        onChange={(e) => this.setState({ name: e.currentTarget.value })}
+                    />
                 </div>
             </div>
         )
